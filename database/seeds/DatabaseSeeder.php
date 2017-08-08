@@ -13,6 +13,12 @@ class DatabaseSeeder extends Seeder
 
 factory(App\Models\Creator_User_Model::class, 1)->create();
 
+factory(App\Models\Creator_User_Model::class, 1)->create();
+
+factory(App\Models\Creator_User_Model::class, 1)->create();
+
+factory(App\Models\Creator_Url_Model::class, 1)->create();
+
 //
         Model::reguard();
     }
