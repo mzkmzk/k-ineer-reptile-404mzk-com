@@ -39,3 +39,16 @@ $factory->define(App\Models\Creator_User_Model::class, function (Faker\Generator
     ];
 });
 
+$factory->define(App\Models\Creator_User_Model::class, function (Faker\Generator $faker) {
+    return [
+        'created_at' => $faker->dateTime(),
+'updated_at' => $faker->dateTime(),
+'wechat_id' => $faker->text(30),
+'login_sum' => $faker->numberBetween(),
+'visit_password' => $faker->text(30),
+'sina_uid' => $faker->text(30),
+'sina_access_token' => $faker->text(30),
+
+    ];
+});
+
