@@ -15,7 +15,7 @@ class Creator_Url_Entity extends Base_Entity{
         $attribute = array();
         $attribute['url'] = parent::set_attribute("url","string");
         $attribute['type'] = parent::set_attribute("类型","string");
-        $attribute['belong'] = parent::set_attribute("归属业务","belong");
+        $attribute['belong'] = parent::set_attribute("归属业务","string");
         $attribute['weight'] = parent::set_attribute("权重","int");
         $attribute['last_visit_at'] = parent::set_attribute("上次访问时间","date");
         $attribute['visit_interval'] = parent::set_attribute("访问频率","int");
