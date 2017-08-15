@@ -17,7 +17,8 @@ class Creator_Url_Entity extends Base_Entity{
         $attribute['type'] = parent::set_attribute("类型","string");
         $attribute['belong'] = parent::set_attribute("归属业务","string");
         $attribute['weight'] = parent::set_attribute("权重","int");
-        $attribute['last_visit_at'] = parent::set_attribute("上次访问时间","date");
+        $attribute['last_reptile_visit_start_at'] = parent::set_attribute("上次被爬虫访问时间","date_time");
+        $attribute['last_reptile_visit_end_at'] = parent::set_attribute("上次爬虫访问完成时间","date_time");
         $attribute['visit_interval'] = parent::set_attribute("访问频率","int");
         $attribute['referer'] = parent::set_attribute("来源","string");
         return array_merge(parent::get_attribute(),$attribute);
